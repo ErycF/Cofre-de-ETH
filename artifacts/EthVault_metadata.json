@@ -6,10 +6,54 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "unlockTime",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdraw",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "lockDays",
+						"name": "lockMinutes",
 						"type": "uint256"
 					}
 				],
@@ -41,6 +85,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -71,11 +122,11 @@
 	},
 	"sources": {
 		"eth-vault/contracts/EthVault.sol": {
-			"keccak256": "0xd0b1f54cdad7d1878655cd9daaeb14594b7c3264db6c3a05e6b7384178ba0b5e",
+			"keccak256": "0x71f9eb55c3e26af16eb03b11fd57350365474a3f2e8123115d5f3a9495f51109",
 			"license": "SEE LICENSE IN LICENSE",
 			"urls": [
-				"bzz-raw://7421ea84aa092ca645ce273c6bd43be8d5af69cd125c1046a3dc78e1cc7f6da4",
-				"dweb:/ipfs/QmR48G5SFM2mYFPMs5Dehhc6oTxU8wD7awHLrK9CioFYVE"
+				"bzz-raw://b69f45668c043e8553b2d3649e87bbb16bbe9a56644bad8ce28988fa36d9efab",
+				"dweb:/ipfs/QmcpNNjWvvWtXSSs6dfkEKFeAaRK8vx9e37MXdd33vZK4c"
 			]
 		}
 	},
